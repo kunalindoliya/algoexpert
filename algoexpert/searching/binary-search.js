@@ -11,18 +11,17 @@ find the middle index and floor round the value and check the middle index value
 */
 // Time: O(logN), Space: O(1)
 function binarySearch(arr, target) {
-    let left = 0, right = arr.length, result = -1
+    let left = 0, right = arr.length
     while (left <= right) {
         const mid = Math.floor((left + right)/2)
         if (target == arr[mid]) {
-            result = mid
-            break
+            return mid
         } else if (target < arr[mid])
             right = mid - 1
         else
             left = mid + 1
     }
-    return result
+    return -1
 }
 
 function test() {
