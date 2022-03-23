@@ -1,5 +1,5 @@
 /* Given an array of number which may or may not be sorted.
- return the three sorted array of three largest number
+ return the sorted array of three largest number
  Input: [ 6, 8, 1, 9, 2, 1, 10]
  Output: 8, 9, 10
  */
