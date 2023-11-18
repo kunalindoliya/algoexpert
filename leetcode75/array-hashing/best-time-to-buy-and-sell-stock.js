@@ -4,6 +4,7 @@
 // time: O(n), space: O(1)
 const maxProfit = function(prices) {
     // initialize pointers
+    // the approach is to create a window in which buy stock should be before sell stock
     let buyPointer = 0
     let sellPointer = 1
     let maxProfit = 0
