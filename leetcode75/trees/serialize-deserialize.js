@@ -16,6 +16,7 @@
  * @param {TreeNode} root
  * @return {string}
  */
+//Time O(N) | Space O(H)
 const serialize = function(root) {
     // preorder traversal
     const result = [];
@@ -37,6 +38,7 @@ const serialize = function(root) {
  *
  * @param {string} data
  * @return {TreeNode}
+ * Time O(N) | Space O(H)
  */
 const deserialize = function(data) {
     const preOrder = data.split(',');

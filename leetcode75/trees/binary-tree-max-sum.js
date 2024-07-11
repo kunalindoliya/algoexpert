@@ -2,6 +2,7 @@
  * @read: https://leetcode.com/problems/binary-tree-maximum-path-sum/description/
  */
 
+// Time O(N) | Space O(H)
 const maxPathSum = function(root) {
     const maxValue = [root.val]; // initialize with root value because we need to capture the max value, this will be our result
     //return max path sum without split
