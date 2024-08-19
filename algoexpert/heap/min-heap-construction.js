@@ -71,6 +71,7 @@ class MinHeapConstruction {
      * Time: O(log(n)
      */
     static siftUp(currentIdx, heap) {
+        // is used for insert a value
         let parentIdx = Math.floor((currentIdx - 1)/2);
         while (currentIdx > 0 && heap[currentIdx] < heap[parentIdx]) {
             this.swap(currentIdx, parentIdx, heap);
