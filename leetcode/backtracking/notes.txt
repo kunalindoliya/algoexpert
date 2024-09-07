@@ -1,0 +1,3 @@
+1. Backtracking  = controlled recursion + pass by reference
+2. constraints are generally x^n
+3. we undo the change before calling recursion again generally
