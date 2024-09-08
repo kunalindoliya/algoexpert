@@ -1,0 +1,10 @@
+1. tabulation or memoization way
+2. tabulation means bottom up dynamic programming. starts from base to required
+3. Memoization means top down dynamic programming
+4. overlapping sub problems
+5. Tabulation: iterative approach and takes O(n) subproblems from the smallest to the largest.
+   RECURSION: Top down: We start from answer, go to the base case and then go back
+   MEMOIZATION: TOP DOWN:  avoids redundant calls done in recursion reducing time complexity
+   TABULATION IS: Bottom up: We start from the base case and we try to go to the required answer
+
+6. Identify: Choices + optimal
