@@ -102,6 +102,10 @@ console.log(climbStairs3(2))
  * @return {number}
  */
 const climbStairs4 = function (n) {
+    //basecase
+    if (n === 1) {
+        return 1
+    }
     let one = 1, two = 2;
     let counter = 3;
     while (counter <= n) {
