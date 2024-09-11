@@ -41,7 +41,7 @@ const longestPalindrome = function (s) {
             right += 1;
         }
         // even length
-        left = i, right = i + 1;
+        left = i;  right = i + 1;
         while (left >= 0 && right < s.length && s[left] === s[right]) {
             if ((right - left + 1) > longest) {
                 res = s.substring(left, right + 1);

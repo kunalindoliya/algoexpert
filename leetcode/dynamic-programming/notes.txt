@@ -8,3 +8,5 @@
    TABULATION IS: Bottom up: We start from the base case and we try to go to the required answer
 
 6. Identify: Choices + optimal
+7. try to make recurrence relation something like f(i) = get the required data  with constraint from index [0... i]. It's like
+checking the sub problem till you reach index [0...n]

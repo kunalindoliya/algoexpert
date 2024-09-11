@@ -18,6 +18,7 @@
 /**
  * @param {number} n
  * @return {string[]}
+ * Time O(2^N) | Space O(2^N)
  */
 const generateParenthesis = function (n) {
     // only add ( if open < n
