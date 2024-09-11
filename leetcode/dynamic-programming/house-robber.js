@@ -104,7 +104,7 @@ const rob = function (nums) {
     for (let i = 1; i < nums.length; i++) {
         let pick = nums[i];
         if (i > 1) {
-           pick += prev2;
+            pick += prev2;
         }
 
         // Calculate the maximum value when not picking the current element
@@ -113,6 +113,18 @@ const rob = function (nums) {
         const cur_i = Math.max(pick, nonPick);
         prev2 = prev;
         prev = cur_i;
+    }
+    return prev;
+}
+
+const rob = function (nums) {
+    let prev = 0, prev2 = 0
+    // [prev2, prev, n, n+1]
+    for (let n of nums) {
+        // if picking n then add n-2th value which is prev2 else not pick nth value
+        let temp = Math.max(n + prev2, prev);
+        prev2 = prev;
+        prev = temp;
     }
     return prev;
 }
